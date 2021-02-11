@@ -15,5 +15,5 @@ from Admin import AdminLoadTesting
 
 
 class MainLoadTesting(HttpUser):
-    #tasks = [TopicsLoadTesting,UsersLoadTesting,EventsLoadTesting,UsersV2LoadTesting,ReactionsLoadTesting,RewardsLoadTesting,FeedsLoadTesting,CommonLoadTesting,EventsV2LoadTesting,AdminLoadTesting]
-    tasks = [EventsV2LoadTesting]
+    tasks = [TopicsLoadTesting,UsersLoadTesting,EventsLoadTesting,UsersV2LoadTesting,ReactionsLoadTesting,RewardsLoadTesting,FeedsLoadTesting,CommonLoadTesting,EventsV2LoadTesting,AdminLoadTesting]
+    #tasks = [EventsV2LoadTesting]
