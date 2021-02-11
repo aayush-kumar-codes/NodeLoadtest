@@ -29,7 +29,7 @@ class TopicsLoadTesting(TaskSet):
         'language': 'en',
         'imageSizes': '[{"width": 100, "height": 120}, {"width": 200, "height": 320}]'}
         files=[
-        ('image',('file',open('/root/Project1/platooLoadTesting/1pxl.jpg','rb'),'application/octet-stream'))
+        ('image',('file',open(str(config.image_path),'rb'),'application/octet-stream'))
         ]
         headers = {
         '_id': str(config.user_id),
