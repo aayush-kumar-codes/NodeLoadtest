@@ -5,7 +5,7 @@ import config
 
 class EventsLoadTesting(TaskSet):
     wait_time = between(1, 2)
-    
+    """
     @task
     def CreateAntakshriEvent(self):
         payload='eventType=ONLINE_GENERAL&title=Anshu%20New%20Event&onlineEventType=LIVE_STREAM&privacy=2&time=3%3A24&date=2020-10-28&defaultImage='
@@ -19,7 +19,7 @@ class EventsLoadTesting(TaskSet):
         response = self.client.post(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
-
+    
     
     @task
     def CreateEvent(self):
@@ -35,7 +35,7 @@ class EventsLoadTesting(TaskSet):
         response = self.client.post(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
-
+    
     @task
     def EventHosted(self):
         payload="{\n    \"limit\": 100\n}"
@@ -49,7 +49,7 @@ class EventsLoadTesting(TaskSet):
         response = self.client.get(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
-
+    
 
     @task
     def NetworkEventList(self):
@@ -64,3 +64,4 @@ class EventsLoadTesting(TaskSet):
         response = self.client.post(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
+    """

@@ -43,7 +43,7 @@ class TopicsLoadTesting(TaskSet):
         assert response.status_code == 200
         assert response
 
-
+    """
     @task
     def UpdateTopic(self):
         payload='topic=This%20is%20topic&language=en&image=https%3A%2F%2Fimages.myguide-cdn.com%2Fmd%2Fcommon%2Flarge%2F5db8905deea80-630078.jpg&id=5f733fe8762f6d66767d0dde'
@@ -59,7 +59,7 @@ class TopicsLoadTesting(TaskSet):
         response = self.client.put(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
-
+    
 
     @task
     def DeleteTopic(self):
@@ -74,3 +74,4 @@ class TopicsLoadTesting(TaskSet):
         response = self.client.delete(url,headers=headers,data=payload)
         assert response.status_code == 200
         assert response
+    """
